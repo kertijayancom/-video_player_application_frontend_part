@@ -1,0 +1,35 @@
+<h2> Bookmarks </h2>
+<h4> You have {{totalBookmarks}} Bookmarks </h4>
+<div class="content">
+    <div fxLayout="row wrap" fxLayoutGap="16px grid">
+        <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let bookmark of bookmarks">
+            <mat-card class="bookmark-card">
+                <mat-card-header>
+                  <div mat-card-avatar class="bookmark-header-image"></div>
+                  <mat-card-title>ID : {{bookmark.video_id}}</mat-card-title>
+                  <mat-card-subtitle>Untitled</mat-card-subtitle>
+                </mat-card-header>
+                <img mat-card-image src="{{'http://i3.ytimg.com/vi/'+ bookmark.video_id + '/hqdefault.jpg'}}" alt="#">
+                <button 
+                mat-icon-button
+                (click)="removeBookmark(bookmark.video_id)" 
+                [color]="bookmarkColor">
+                  <mat-icon style="align-items: center;">bookmark</mat-icon>
+                </button>
+                <mat-card-content>
+                  <p>
+                    Saved at {{ bookmark.created_at }}
+                  </p>
+                </mat-card-content>
+                            
+              </mat-card>              
+        </div>
+    </div>    
+</div>
+
+<section>
+<div class="nav-button-row" >
+<button mat-button (click)='getPrevPage()'>Prev Page</button>
+<button mat-button (click)='getNextPage()'>Next Page</button>
+</div>
+</section>

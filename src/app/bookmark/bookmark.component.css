@@ -1,0 +1,12 @@
+.bookmark-card {
+    max-width: 400px;
+}
+
+.bookmark-header-image {
+    background-size: cover;
+}
+
+.nav-button-row {
+    display: table-cell;
+    width: 490px;
+  }

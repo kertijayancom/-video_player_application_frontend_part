@@ -1,0 +1,7 @@
+<form class="example-form" [formGroup]="myForm">
+    <mat-form-field class="example-full-width">
+      <mat-label>Type youtube URL only!!</mat-label>
+      <input matInput #message maxlength="256" placeholder="Ex. https://www.youtube.com/watch?v=Sx9RcI_EueM" formControlName="okay" [(ngModel)]="youtubeValSearch">
+    </mat-form-field>
+    <button (click)="setToModelFromForm()">Search</button>
+</form>

@@ -1,0 +1,15 @@
+<h2> History ({{totalHistory}})</h2>
+<div class="content">
+  <mat-card fxFlex="100%" >
+    <mat-selection-list [style.overflow]="'auto'" [style.height.px]="'300'">
+        <mat-list-item
+            *ngFor="let history of histories"
+            >
+            <div mat-card-avatar class="example-header-image"
+            style="background-image: url('http://i3.ytimg.com/vi/cc/hqdefault.jpg');"></div>
+            Watch #{{history.video_id}} - added (#{{history.created_at}})
+    </mat-list-item>
+  </mat-selection-list>  
+  </mat-card>
+</div>
+ 

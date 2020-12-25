@@ -1,0 +1,23 @@
+<h2>
+    Play your Video
+</h2>
+<div class="content">
+    <!-- <mat-grid-tile colspan="3" rowspan="2">         -->
+        <youtube-player 
+            [videoId]='youtubeValSearch'
+            suggestedQuality="highres" 
+            [height]="390" 
+            [width]="640"
+            [startSeconds]="4"
+            [endSeconds]="8">
+        </youtube-player>
+        <br>
+        <button 
+            mat-icon-button
+            (click)="bookmarkClick()" 
+            [ngClass]="{'red' : toggle, 'black': !toggle}" 
+            [color]="bookmarkColor">
+            <mat-icon>bookmark</mat-icon>
+        </button>
+    <!-- </mat-grid-tile> -->
+</div>

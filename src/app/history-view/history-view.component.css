@@ -1,0 +1,18 @@
+.history-card {
+    max-width: 400px;
+}
+
+.history-header-image {
+    background-size: cover;
+    background-image: url("http://i3.ytimg.com/vi/cc/hqdefault.jpg");
+}
+
+.nav-button-row {
+    display: table-cell;
+    width: 490px;
+}
+
+mat-selection-list {
+    max-height: 400px;
+    overflow: auto;    
+}
