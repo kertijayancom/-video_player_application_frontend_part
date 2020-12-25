@@ -7,7 +7,6 @@ for better experience, please install npm and a whole package from project
 
 run the app!!
 ```bash
-cd relief-frontend
 ng serve
 ```
 
