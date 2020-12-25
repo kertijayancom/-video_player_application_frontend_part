@@ -26,7 +26,8 @@ The Project Contain:
 - bookmarkPanel : on bottom side, by navigation page.
 
 
-this app is using Angular Material and Flex
+This Project was generated using Angular Material and Flex
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.5.
 
 ![alt text](img1.png "screenshoot")
 ![alt text](img2.png "screenshoot")
